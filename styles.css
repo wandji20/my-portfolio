@@ -1,5 +1,23 @@
 body {
-  padding-left: 0;
+  font-family: "open-sans", sans-serif;
+  background-color: #000;
+  color: #81848a;
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 300;
+}
+
+#remove-padding {
   padding-right: 0;
-  background-color: aquamarine;
+  padding-left: 0;
+}
+
+header {
+  background-color: #000;
+}
+
+nav a {
+  font-size: 1.4em;
+  margin-left: 15px;
+  font-weight: 400;
 }
