@@ -101,3 +101,36 @@ footer li {
   margin: auto;
   color: #000;
 }
+
+.content-section {
+  width: 100%;
+  height: auto;
+  border: 1px solid blue;
+}
+
+.projects {
+  padding-top: 10px;
+}
+
+.projects h5 {
+  font-weight: 800;
+  color: #000;
+  margin-top: 1.2em;
+  font-size: 1.2em;
+}
+
+.project-article {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.project-article figure {
+  height: 100%;
+  width: 100%;
+}
+
+.project-content {
+  height: max-content;
+  font-weight: 400;
+  margin-top: -17px;
+}
