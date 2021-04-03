@@ -5,31 +5,203 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/styles.css">
   <title>Portfolio</title>
 </head>
-<body>
-  <header>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<body class = 'container-fluid' id='remove-padding'>
+  <header class = 'container-fluid fixed-top'>
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand h4" href="#">Wandji</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#skills">Skills</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   </header>
+  <div class="main">
+    <div class = 'main-img'>
+      <img src="assets/images/laptop.jpg" alt="" class='img-fluid remove-border'>
+      <div class='text-white main-text'>
+        <h3 class='mt-2' >I am Wandji Bertrand, a Software Developer living in Cameroon.</h3>
+        <h4 class= 'd-none d-md-block'>Currently I am open to new roles</h4>
+      </div>
+      <ul class="">
+        
+        <li class='text-white ' >Contacts </li>
+        <li>
+          <a href="https://github.com/wandji20" class="link icon "><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/wandji-bertrand/" class="link icon "><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/wandjibertrand" class="link icon "><i class="fa fa-twitter"></i></a>
+        </li>
+  
+      </ul>
+    </div>
+    <section class='heading-section text-white'>
+        <h3><a href="#projects">Projects</a></h3>
+        <h3><a href="#skills">Skills</a></h3>
+    </section>
+    <div class= 'content-section bg-white'>
+      <section class='projects container-fluid' id = 'projects'>
+        <h3 class="d-none">Projects</h3>
+        <div class=''>
+          <article class='project-article' >
+            <figure class='figure2'>
+              <img src="assets/images/culture2.png" alt="" class='img-fluid'>
+            </figure>
+            <div class='project-content'>
+              <h5>Culture Educate</h5>
+              <div>
+                <p>
+                 Culture-Educate is a rails App built such that When a user is signed_in on Culture-Educate, they can see all created articles classified by categories. Also, the signed_in user can create an article, upvote, and downvote a voted article
+                <p class= 'd-flex justify-content-between'>
+                  <a href="https://github.com/wandji20/Culture-Educate">
+                    <span>Source Code</span>
+                  </a>
+                  <a href="https://quiet-garden-35037.herokuapp.com/">
+                    <span>Live Demo</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </article>
+          <hr>
+          <article class='project-article' >
+            <figure class='figure1'>
+              <img src="assets/images/zattix_store.png" alt="" class='img-fluid'>
+            </figure>
+            <div class='project-content'>
+              <h5>Zattix Online Shop</h5>
+              <div>
+                <p>
+                  A static online shop for Electronics with an index page to display all items grouped by category.
+                  This was acheived with plain HTML and CSS, and basic Bootstrap.
+                </p>
+                <p class= 'd-flex justify-content-between'>
+                  <a href="https://github.com/wandji20/Zattix-Online-Shop" target='_blank' rel="noopener">
+                    <span>Source Code</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </article>
+          <hr>
+          <article class='project-article' >
+            <figure class='figure3'>
+              <img src="assets/images/tic1.png" alt="" class='img-fluid'>
+            </figure>
+            <div class='project-content'>
+              <h5>Tic Tac Toe</h5>
+              <div>
+                <p>
+                 This project is based on remaking the logic the Tic Tac Toe game using ruby object oriented principles.
+                </p>
+                <p class= 'd-flex justify-content-between'>
+                  <a href="https://github.com/wandji20/tic-tac-toe">
+                    <span>Source Code</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </article>
+          <hr>
+          <article class='project-article' >
+            <figure class='figure4'>
+              <img src="assets/images/linters.png" alt="" class='img-fluid'>
+            </figure>
+            <div class='project-content'>
+              <h5>Text Grammar Linter</h5>
+              <div>
+                <p>
+                 This project is designed to scan through an input text file and output errors about its structure and typography.
+                </p>
+                <p class= 'd-flex justify-content-between'>
+                  <a href="https://github.com/wandji20/Grammar-checker">
+                    <span>Source Code</span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </article> 
+        </div>
+      </section> 
+    </div>
+    <section class= 'skills' id='skills'>
+      <h3 class='ml-3 my-2 text-white'>Skills</h3>
+      <div >
+        <h4 class=' text-center mb-3 text-white' >Languages</h4>
+        <div class="languages">
+          <div class = ' language'>
+            <div> <img src="assets/images/ruby.jpeg" alt="" class='img-fluid'></div>
+            <h6>Ruby</h6>
+          </div>
+          <div class = ' language'>
+            <div> <img src="assets/images/html.png" alt="" class='img-fluid'> </div>
+            <h6>HTML</h6>
+          </div>
+          <div class = ' language'>
+            <div> <img src="assets/images/js.jpg" alt="" class='img-fluid'> </div>
+            <h6>Javascript</h6>
+          </div>
+          <div class = ' language'>
+            <div> <img src="assets/images/css.png" alt="" class='img-fluid'></div>
+            <h6>CSS</h6>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-center text-white mb-3">Frameworks</h4>
+        <div class="languages">
+          <div class="framework">
+            <div><img src="assets/images/bootstrap-icon.jpeg" alt="" class='img-fluid'></div>
+            <h6>Bootstrap</h6>
+          </div>
+          <div class="framework">
+            <div><img src="assets/images/ror.png" alt="" class='img-fluid'></div>
+            <h6>ROR</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+
+
+
+  <footer>
+    <ul class="">
+          
+      <li class='text-white ' >Contacts </li>
+      <li>
+        <a href="https://github.com/wandji20" class="link icon "><i class="fa fa-github"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/wandji-bertrand/" class="link icon "><i class="fa fa-linkedin"></i></a>
+      </li>
+      <li>
+        <a href="https://twitter.com/wandjibertrand" class="link icon "><i class="fa fa-twitter"></i></a>
+      </li>
+
+    </ul>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
