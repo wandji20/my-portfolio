@@ -1,5 +1,6 @@
 body {
   font-family: "open-sans", sans-serif;
+
   /* background-color: #fff; */
   color: #81848a;
   font-size: 17px;
@@ -11,6 +12,7 @@ body {
   padding-right: 0;
   padding-left: 0;
 }
+
 header {
   background-color: #000;
 }
@@ -33,6 +35,7 @@ nav a {
   grid-template-rows: 40vh;
   font-weight: 600;
 }
+
 .img-fluid {
   border-radius: 10px;
   max-height: 100%;
@@ -85,6 +88,7 @@ footer li {
 .main-img li {
   margin-right: 1em;
 }
+
 .heading-section {
   background-color: #fff;
   width: 80%;
@@ -184,6 +188,7 @@ footer li {
   .project-article {
     grid-template-columns: 1fr 1fr;
   }
+
   .project-article figure {
     height: 80%;
     width: 80%;
@@ -207,6 +212,7 @@ footer li {
     grid-template-rows: 60vh;
   }
 }
+
 @media only screen and (min-width: 2000px) {
   .main-img {
     grid-template-rows: 70vh;
