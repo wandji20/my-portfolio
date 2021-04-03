@@ -1,6 +1,6 @@
 body {
   font-family: "open-sans", sans-serif;
-  background-color: #fff;
+  /* background-color: #fff; */
   color: #81848a;
   font-size: 17px;
   line-height: 27px;
@@ -23,13 +23,11 @@ nav a {
 
 .main {
   margin-top: 61px;
-  /* background: #000; */
 }
 
 .main-img {
   position: relative;
   z-index: -1;
-  background-size: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 40vh;
@@ -43,6 +41,10 @@ nav a {
   width: 100%;
   min-height: 100%;
   min-width: 100%;
+}
+
+.remove-border {
+  border-radius: 0;
 }
 
 .main-text {
@@ -91,7 +93,6 @@ footer li {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 10vh;
   font-size: 130%;
-  border: 1px solid red;
   border-radius: 10px;
 }
 
@@ -105,7 +106,6 @@ footer li {
 .content-section {
   width: 100%;
   height: auto;
-  border: 1px solid blue;
 }
 
 .projects {
@@ -115,7 +115,7 @@ footer li {
 .projects h5 {
   font-weight: 800;
   color: #000;
-  margin-top: 1.2em;
+  margin-top: 1.6em;
   font-size: 1.2em;
 }
 
@@ -133,4 +133,35 @@ footer li {
   height: max-content;
   font-weight: 400;
   margin-top: -17px;
+}
+
+.skills {
+  margin-bottom: 39px;
+  background-color: black;
+}
+
+.languages,
+.frameworks {
+  display: flex;
+  font-size: 0.8em;
+}
+
+.framework,
+.language {
+  width: 20%;
+  margin: auto;
+}
+
+.framework div,
+.language div {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.language h6,
+.framework h6 {
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
 }
